@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br"> 
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Feliz</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <a href="PrimeiraPagina.html"><img src="logo.png"></a>
+    <figure class="usuario">
+        <a href="TerceiraPagina.html"><img src="usuario.png" alt="Usuário"></a>
+        <figcaption id="nomeUsuario">Usuário não autenticado</figcaption>
+    </figure>
+    <script src="js/scripts.js"></script>
+</head> 
+<body> 
+  <ul class="menu">
+    <li class="dropdown">
+        <a href="javascript:void(0)" class="drop_btn">Cachorros</a>
+        <div class="dropdown-content">
+            <a href="#">Ração</a>
+            <a href="#">Petiscos e Ossos</a>
+            <a href="#">Brinquedos</a>
+            <a href="#">Roupas</a>
+        </div>
+    </li>
+    <li class="dropdown">
+        <a href="javascript:void(0)" class="drop_btn">Gatos</a>
+        <div class="dropdown-content">
+            <a href="#">Ração</a>
+            <a href="#">Petiscos</a>
+            <a href="#">Areias e Banheiros</a>
+            <a href="#">Arranhadores e Brinquedos</a>
+        </div>
+    </li>
+    <li class="dropdown">
+        <a href="javascript:void(0)" class="drop_btn">Pássaros</a>
+        <div class="dropdown-content">
+            <a href="#">Alimentação</a>
+            <a href="#">Gaiolas e Viveiros</a>
+            <a href="#">Brinquedos e Poleiros</a>
+            <a href="#">Acessórios</a>
+        </div>
+    </li>
+    <li class="dropdown">
+        <a href="javascript:void(0)" class="drop_btn">Peixes</a>
+        <div class="dropdown-content">
+            <a href="#">Alimentação</a>
+            <a href="#">Equipamentos e Acessórios</a>
+            <a href="#">Aquários e Beteiras</a>
+        </div>
+    </li>
+    <li class="dropdown">
+        <a href="javascript:void(0)" class="drop_btn">Outros Pets</a>
+        <div class="dropdown-content">
+            <a href="#">Coelho</a>
+            <a href="#">Hamster e Twister</a>
+            <a href="#">Porquinho da índia</a>
+            <a href="#">Chinchilas</a>
+            <a href="#">Furão</a>
+            <a href="#">Tartarugas</a>
+            <a href="#">Lagartos</a>
+        </div>
+    </li>
+    <li><a href="#">Promoções</a></li>
+    <li class="dropdown">
+        <a href="SegundaPagina.html" class="drop_btn">LOGIN</a>
+    </li>
+  </ul>
+  <form target="_blank" onsubmit="return confirm('Confirma?');">
+    <fieldset class="loginUsuario">   
+        <legend>&nbsp;Login&nbsp;</legend>
+        <label for="login">Login: </label>
+            <input type="text" name="login" id="login" autofocus required>
+            <label for="senha">Senha: </label>
+            <input type="password" name="senha" id="senha" required>
+            <br> <br>
+            <button onclick="fazLogin()">Autenticar</button><br>
+    </fieldset>
+    </form>
+  <footer id="rodape"> 
+    Estudante: J&eacute;ssica Strutz.
+  </footer> 
+</body> 
+</html>
